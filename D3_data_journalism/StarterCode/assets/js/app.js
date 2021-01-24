@@ -62,11 +62,20 @@ var circlesGroup = chartGroup.selectAll("circle")
 .attr("cy", d => yLinearScale(d.poverty))
 
 .attr("r", "10")
-.attr("fill", "green")
+.attr("fill", d => "green")
 .attr("opacity", ".8")
 
-
-.text(d => d.abbr);
+chartGroup.selectAll("text")
+.data(statedata)
+.enter()
+.append("text")
+.text(d=>(d.abbr))
+.attr("x", d => xLinearScale(d.obesity))
+.attr("y", d => yLinearScale(d.poverty))
+.attr("class", "text")
+.attr("font-size", "8px")
+.attr("text-anchor", "middle")
+.attr("fill", "yellow");
 
 //creating axis labels
 chartGroup.append("text")
