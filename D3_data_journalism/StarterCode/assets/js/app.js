@@ -54,15 +54,14 @@ chartGroup.append("g")
   .call(leftAxis);
 
 // Create Circles
-var circlesGroup = chartGroup.selectAll("circle")
+chartGroup.selectAll("circle")
 .data(statedata)
 .enter()
 .append("circle")
 .attr("cx", d => xLinearScale(d.obesity))
 .attr("cy", d => yLinearScale(d.poverty))
-
-.attr("r", "10")
-.attr("fill", d => "green")
+.attr("r", "13")
+.attr("fill", "green")
 .attr("opacity", ".8")
 
 chartGroup.selectAll("text")
@@ -73,7 +72,7 @@ chartGroup.selectAll("text")
 .attr("x", d => xLinearScale(d.obesity))
 .attr("y", d => yLinearScale(d.poverty))
 .attr("class", "text")
-.attr("font-size", "8px")
+.attr("font-size", "9px")
 .attr("text-anchor", "middle")
 .attr("fill", "yellow");
 
