@@ -64,7 +64,7 @@ chartGroup.selectAll("circle")
 .attr("fill", "green")
 .attr("opacity", ".8")
 
-chartGroup.selectAll("text")
+chartGroup.selectAll("null")
 .data(statedata)
 .enter()
 .append("text")
