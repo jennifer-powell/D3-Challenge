@@ -21,6 +21,3 @@ The data set included with the assignment is based on 2014 ACS 1-year estimates:
 
 - ## Instructions on how to use the program
     - used `python -m http.server` to run the visualization. This will hosted the page at `localhost:8000` in the web browser
-- ## Findings and conclusion
-    - findings
-    - conclusion
