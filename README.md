@@ -7,7 +7,7 @@ The data set included with the assignment is based on 2014 ACS 1-year estimates:
   
 
 - ## Programs, Languages and tools
-  -D3, Javascript, HTML
+  - D3, Javascript, HTML
 - ## File overview
   - ### D3_data_journalism/StarterCode/assets/js/app.js
     ##### Created a scatter plot that represents each state with circle elements comparing obesity and poverty
